@@ -14,9 +14,9 @@ To Run:
 <ul>5.) Verify you have mongo running</ul>
 <ul>6.) Run "node server.js" in terminal</ul>
 
-If done properly it will return:
-<i>$ node server</i>
-<b>Listening. Visit localhost:3000</b>
+If done properly it will return:<br />
+<i>$ node server</i><br />
+<b>Listening. Visit localhost:3000</b><br />
 <b>Connected to Mongoose!</b>
 
 In which case type "localhost:3000" within your browser and you should be able to view everything.
