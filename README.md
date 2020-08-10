@@ -17,7 +17,7 @@ Express
 Cheerio
 
 <h2> Example </h2>
-<img height="150px" width="150px" src="https://i.imgur.com/2SuCQrY.png" alt="Example" />
+<img height="150px" width="300px" src="https://i.imgur.com/2SuCQrY.png" alt="Example" />
 
 <hr />
 
