@@ -3,6 +3,7 @@
 <h5>Click <a href="https://jrvillalba1993.github.io/Portfolio/"><b>HERE</b></a> for my portfolio!</h5>
 In this assignment I created a web scraper that parsed and sorts data from a sports website and once displayed, allows users to make comments on individual articles.
 
+<br />
 You can view the deployed version <a href="https://scrapernews187.herokuapp.com/">HERE</a>
 
 $ node server
