@@ -11,7 +11,7 @@ app.use(
     extended: false
   })
 );
-//Handlebar Layout
+//Connecting Handlebars
 app.use(express.static(process.cwd() + "/public"));
 var exphbs = require("express-handlebars");
 app.engine(
@@ -21,6 +21,7 @@ app.engine(
   })
 );
 //Mongo Connection to db
+// If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
 app.set("view engine", "handlebars");
 const MONGODB_URI =
   process.env.MONGODB_URI || "nomongodb://localhost/mongoHeadlines";

@@ -18,7 +18,7 @@ router.get("/scrape", function(req, res) {
     var $ = cheerio.load(html);
     var titlesArray = [];
 
-    <!-- Articles -->
+    <!-- Scraping specifics-->
     $("h2.c-entry-box--compact__title").each(function(i, element) {
       var result = {};
 
