@@ -1,4 +1,4 @@
-//Modules
+//Module Dependencies
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var logger = require("morgan");
@@ -11,7 +11,7 @@ app.use(
     extended: false
   })
 );
-//Handlebar Stuffzzz
+//Handlebar Layout
 app.use(express.static(process.cwd() + "/public"));
 var exphbs = require("express-handlebars");
 app.engine(
@@ -20,10 +20,10 @@ app.engine(
     defaultLayout: "main"
   })
 );
-//Mongo Connection
+//Mongo Connection to db
 app.set("view engine", "handlebars");
 const MONGODB_URI =
-  process.env.MONGODB_URI || "mongodb://localhost/scraper_news";
+  process.env.MONGODB_URI || "nomongodb://localhost/mongoHeadlines";
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 var db = mongoose.connection;
@@ -31,10 +31,10 @@ db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", function() {
   console.log("Connected to Mongoose!");
 });
-//Port
+//Server Startup
 var routes = require("./controller/controller.js");
 app.use("/", routes);
 var port = process.env.PORT || 3000;
 app.listen(port, function() {
-  console.log("Listening on PORT " + port);
+  console.log("Listening. Visit localhost:" + port);
 });

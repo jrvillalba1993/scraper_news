@@ -14,12 +14,12 @@ router.get("/", function(req, res) {
 
 <!-- Scrape this site -->
 router.get("/scrape", function(req, res) {
-  request("http://www.theverge.com", function(error, response, html) {
+  request("http://www.cincyjungle.com", function(error, response, html) {
     var $ = cheerio.load(html);
     var titlesArray = [];
 
     <!-- Articles -->
-    $(".c-entry-box--compact__title").each(function(i, element) {
+    $("h2.c-entry-box--compact__title").each(function(i, element) {
       var result = {};
 
       result.title = $(this)
