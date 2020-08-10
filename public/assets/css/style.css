@@ -15,6 +15,7 @@ main {
   font-size: 20px;
   overflow-y: scroll;
   line-height: 150%;
+  
 }
 #btnSignUp {
   background-color: #002de1;
@@ -36,6 +37,7 @@ main {
 }
 .topnav {
 
-  background-color: #002de1;
-  border-bottom: 1px solid #000000;
+  background: url("../images/white_leather2.png");
+  border-bottom: 3px solid #ffffff;
+
 }
