@@ -7,12 +7,14 @@ You can view the deployed version <a href="https://scrapernews187.herokuapp.com/
 In this assignment I created a web scraper that parsed and sorts data from a sports website and once displayed, allows users to make comments on individual articles.
 
 To Run:
-1.) Download
-2.) Clone Repo
-3.) "npm init" inside terminal
-4.) "npm install" inside terminal
-5.) Verify you have mongo running
-6.) Run "node server.js" in terminal
+<li>
+<ul>1.) Download</ul>
+<ul>2.) Clone Repo</ul>
+<ul>3.) "npm init" inside terminal</ul>
+<ul>4.) "npm install" inside terminal</ul>
+<ul>5.) Verify you have mongo running</ul>
+<ul>6.) Run "node server.js" in terminal</ul>
+  </li>
 
 If done properly it will return:
 <i>$ node server</i>
