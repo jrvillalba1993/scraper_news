@@ -19,17 +19,9 @@ If done properly it will return:<br />
 <b>Listening. Visit localhost:3000</b><br />
 <b>Connected to Mongoose!</b>
 
-In which case type "localhost:3000" within your browser and you should be able to view everything.
+In which case type <b>"localhost:3000"</b> within your browser and you should be able to view everything.
 
-
-I used the following modules:
-Body-parser
-Mongoose
-Morgan
-Express
-Cheerio
-
-<h2> Example </h2>
+<h2> Example of what your browser should display </h2>
 <img height="150px" width="300px" src="https://i.imgur.com/2SuCQrY.png" alt="Example" />
 
 <hr />
